@@ -10,30 +10,34 @@
       type="text/css"
       href="stylesheets/css-pages-style.css"
     />
-    <style></style>
+    <style>
+      .highlighted-word {
+        color: rgba(255, 255, 255, 0.87);
+      }
+      .text {
+        padding-top: 10px;
+        display: inline;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <div class="top-bar">
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="info.html">Info</a>
-          <a href="gallery.html">Gallery</a>
-        </nav>
-        <p id="top-bar-name">LOTTIE MARIE</p>
-      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="info.html">Info</a>
+        <a href="gallery.html">Gallery</a>
+        <h2 id="nav-bar-title">LOTTIE MARIE</h2>
+      </nav>
     </header>
     <main>
       <img
         src="https://media.discordapp.net/attachments/731314689367212046/968759160843927602/IMG_6190.PNG?width=1279&height=742"
-        alt=""
-        style="padding-left: none"
-        height="690px"
+        alt="A collage of notable works of art created by Lottie Marie"
+        height="100%"
         width="100%"
       />
       <h1
         style="
-          text-align: center;
           color: rgba(255, 255, 255, 0.87);
           position: absolute;
           top: 190px;
@@ -44,31 +48,56 @@
         LOTTIE MARIE
       </h1>
       <h2>About Me</h2>
-      <p style="padding-top: 10px">
-        Hello, my name is Lottie Marie. I'm a very
-        <span style="color: rgba(255, 255, 255, 0.87)">talented</span> <br />
-        and
-        <span style="color: rgba(255, 255, 255, 0.87)">passionate</span> artist
-        who has been drawing for as long <br />
-        as I can remember. This website is dedicated to showing <br />
-        off my best works of art, and telling you a bit about me.
-      </p>
-      <br />
+      <div
+        style="
+          background-color: rgb(29, 29, 29);
+          height: auto;
+          width: auto;
+          display: flex;
+        "
+      >
+        <p style="margin-top: 20px">
+          Hello, my name is Lottie Marie. I'm a very
+
+          <span class="highlighted-word">talented</span> <br />
+          and
+          <span class="highlighted-word">passionate</span> artist who has been
+          drawing for as long <br />
+          as I can remember. This website is dedicated to showing <br />
+          off my best works of art, and telling you a bit about me.
+        </p>
+        <img
+          src="https://media.discordapp.net/attachments/731314689367212046/968912002720366653/unknown.png"
+          alt=""
+          width="256px"
+          height="256px"
+          style="margin-left: 60px"
+        />
+      </div>
       <figure>
         <h2>Featured drawing</h2>
+        <div
+        style="
+          background-color: rgb(29, 29, 29);
+          height: auto;
+          width: auto;
+          display: flex;
+        "
+      >
         <img
           src="https://media.discordapp.net/attachments/895059520139718677/968719417175339008/DA411C9D-8C58-4548-A597-850FD6886AED.jpg?width=741&height=741"
           alt="yes"
-          height="300"
-          width="300"
-          style="margin: 10px"
+          height="256px"
+          width="256px"
+          style="margin-left: 40px;"
         />
-        <figcaption>
+        <figcaption style="padding-top: 20px;">
           This is Lotti's most recent illustration. It was <br />
           created to serve as a visual representation <br />
           of a scene in a story entirly made by Lottie.
         </figcaption>
       </figure>
+      </div>
     </main>
   </body>
 </html>
