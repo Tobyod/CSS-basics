@@ -37,27 +37,16 @@
       }
       /* Changes a highlighted word to the colour rgba(255, 250, 190, 0.87) */
       .highlighted-word {
-        color: rgba(255, 250, 190, 0.87);
+        color: rgb(255, 250, 191);
       }
       /* 
         creates a flexbox allowing an image to be put directly next to text in the 
         about me section, sets background colour to rgb(29, 29, 29), height to 280 
         pixels and makes the width the same as the total width of the webpage.
       */
-      #about-me {
+      .content-block {
         display: flex;
-        background-color: rgb(29, 29, 29);
-        height: 280px;
-        width: 100%;
-      }
-      /* 
-        creates a flexbox allowing an image to be put directly next to text in the 
-        featured drawing section, sets background colour to rgb(29, 29, 29), height to 256 
-        pixels and makes the width the same as the total width of the webpage.
-      */
-      #featured-drawing {
-        display: flex;
-        background-color: rgb(29, 29, 29);
+        background-color: rgb(20, 20, 20);
         height: 256px;
         width: 100%;
       }
@@ -68,25 +57,10 @@
         and smooths out the corners of the container surrounding the heading with a border
         radius of 2 pixels.
       */
-      #about-me-heading {
-        color: rgba(255, 254, 227, 0.87);
+      .content-heading {
+        color: rgba(253, 251, 185, 0.94);
         font-size: 40px;
-        background-color: #181818;
-        margin: 10px;
-        padding: 5px 30px;
-        border-radius: 2px;
-      }
-      /* 
-        sets the colour of the about me heading to rgba(219, 219, 255, 0.87),
-        sets the font size of the heading to 40px, makes the background colour #181818,
-        adds 10 pixels of margin, adds 5 pixels vertically and 30 pixels horizontally of padding
-        and smooths out the corners of the container surrounding the heading with a border
-        radius of 2 pixels.
-      */
-      #featured-drawing-heading {
-        color: rgba(219, 219, 255, 0.87);
-        font-size: 40px;
-        background-color: #181818;
+        background-color: rgb(23, 23, 23);
         margin: 10px;
         padding: 5px 30px;
         border-radius: 2px;
@@ -113,8 +87,8 @@
         />
       </section>
       <section>
-        <h2 id="about-me-heading">About Me</h2>
-        <div id="about-me">
+        <h2 class="content-heading">About Me</h2>
+        <div class="content-block">
           <!-- The artist requested they remain anonymous, so one of their favourite 
           original character's name and face is being used to represent them  -->
           <p>
@@ -131,15 +105,15 @@
             src="https://media.discordapp.net/attachments/731314689367212046/968912002720366653/unknown.png"
             alt="A headshot picture of Lottie Marie with her pet crab resting on her head."
             width="256px"
-            height="280px"
+            height="256px"
             style="padding-left: 60px"
           />
           <!-- adds 40 pixels of padding from the left of webpage to the image-->
         </div>
       </section>
       <section>
-        <h2 id="featured-drawing-heading">Featured Drawing</h2>
-        <div id="featured-drawing">
+        <h2 class="content-heading">Featured Drawing</h2>
+        <div class="content-block">
           <img
             src="https://media.discordapp.net/attachments/895059520139718677/968719417175339008/DA411C9D-8C58-4548-A597-850FD6886AED.jpg?width=741&height=741"
             alt="An illustration of an unkempt room covered in vines with a balcony that gives a clear view of a night sky with three moons."
