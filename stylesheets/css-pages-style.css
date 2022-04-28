@@ -1,56 +1,76 @@
+/* 
+  Sets margin for entire website to 0 so header fits snugly at the top 
+*/
 * {
   margin: 0;
 }
-h2 {
-  color: rgba(255, 255, 255, 0.87);
-  font-size: 40px;
-  background-color: #181818;
-  margin: 10px;
-  padding: 5px;
-  padding-left: 30px;
-}
+/* 
+  Sets the font family and background colour to #121212 for the whole webpage 
+*/
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #121212;
-  margin: 0;
 }
+/* 
+  changes the colour of main heading to rgba(255, 255, 255, 0.87),
+*/
+h1 {
+  color: rgba(255, 255, 255, 0.87);
+}
+/* 
+  Makes the text colour rgba(255, 255, 255, 0.6), font size 24 pixels and 
+  adds 20 pixels of padding for all paragraph tags.
+*/
 p {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 30px;
-  padding-left: 20px;
+  font-size: 24px;
+  padding: 20px;
 }
-figcaption {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 30px;
-  padding-left: 20px;
-}
-nav {
+/* 
+  Fixes the nav bar's position so it stays at the very top of the webpage,
+  makes the width 100% the width of the webpage, adjusts the z-index so the
+  header goes over the webpage's other content and makes the header's background
+  colour #1c1c1c.
+*/
+header {
   background-color: #1c1c1c;
-  overflow: hidden;
   position: fixed;
   width: 100%;
   z-index: 1;
 }
+/* 
+  Makes the nav buttons float to the left of the header, removes the underline
+  nav buttons have to make it look more clean, makes text colour rgba(255, 255, 255, 0.87),
+  alligns the button's text to the center of the button, adds 23 pixels of padding and 
+  makes the font size 17 pixels.
+*/
 nav a {
   float: left;
-  color: white;
-  opacity: 87%;
+  text-decoration: none; /* Helps nav link emoves underline */
+  color: rgba(255, 255, 255, 0.87);
   text-align: center;
-  padding: 21px;
+  padding: 23px;
   font-size: 17px;
 }
+/* 
+  gradually lightens nav button's background colour to color: rgba(255, 255, 255, 0.87)
+  and darkens the button's text over 0.5 seconds when a nav button is hovered over 
+*/
 nav a:hover {
   transition: 0.5s ease;
-  background-color: lightgray;
+  background-color: rgba(255, 255, 255, 0.87);
   color: #181818;
 }
-
+/* 
+  displays title of the webpage as an inline element to make 
+  it able appear on the same line as nav buttons, floats title to the right
+  of the header, changes its text colour to color: rgba(255, 255, 255, 0.87), 
+  adds 15 pixels of padding and adjusts font size to 30 pixels
+*/
 #nav-bar-title {
   float: right;
-  text-align: center;
   display: inline;
-  color: white;
-  opacity: 87%;
+  color: rgba(255, 255, 255, 0.87);
   padding: 15px;
-  font-size: 24px;
+  font-size: 30px;
 }
