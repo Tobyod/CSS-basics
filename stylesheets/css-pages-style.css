@@ -22,7 +22,7 @@ h1 {
   adds 20 pixels of padding for all paragraph tags.
 */
 p {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.93);
   font-size: 24px;
   padding: 20px;
 }
@@ -33,7 +33,7 @@ p {
   colour #1c1c1c.
 */
 header {
-  background-color: #1c1c1c;
+  background-color: rgb(27, 27, 27);
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -46,8 +46,8 @@ header {
 */
 nav a {
   float: left;
-  text-decoration: none; /* Helps nav link emoves underline */
-  color: rgba(255, 255, 255, 0.87);
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.96);
   text-align: center;
   padding: 23px;
   font-size: 17px;
@@ -58,7 +58,7 @@ nav a {
 */
 nav a:hover {
   transition: 0.5s ease;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: rgba(255, 255, 255, 0.96);
   color: #181818;
 }
 /* 
@@ -70,7 +70,7 @@ nav a:hover {
 #nav-bar-title {
   float: right;
   display: inline;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(255, 255, 255, 0.96);
   padding: 15px;
   font-size: 30px;
 }
