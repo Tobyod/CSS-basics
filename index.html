@@ -3,7 +3,7 @@
   Course: Software Development 20S
   Teacher: Mr. Hardman
   School: Pembina Trails Early College
-  Date Last Modified: 4/27/2022
+  Date Last Modified: 5/2/2022
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -19,51 +19,16 @@
     />
     <style>
       /* 
-        changes the colour of main heading to rgba(255, 255, 255, 0.87),
-        makes the background-colour rgba(50, 50, 50, 0.6), makes it so the 
-        heading will be able to be on top of the image by setting the position 
-        to absolute and adds 6 pixels of margin and 5 pixels of padding to the 
-        heading. Moves the heading down 190 pixels, 40% away from the left
-        and changes the font size of the heading to 100 pixels.
+       Moves the heading down 190 pixels, 40% away from the left
       */
       h1 {
-        background-color: rgba(50, 50, 50, 0.6);
-        margin: 6px;
-        padding: 5px;
-        position: absolute;
         top: 190px;
         left: 40%;
-        font-size: 100px;
       }
       /* Changes a highlighted word to the colour rgba(255, 250, 190, 0.87) */
       .highlighted-word {
-        color: rgb(255, 250, 191);
-      }
-      /* 
-        creates a flexbox allowing an image to be put directly next to text in the 
-        about me section, sets background colour to rgb(29, 29, 29), height to 280 
-        pixels and makes the width the same as the total width of the webpage.
-      */
-      .content-block {
-        display: flex;
-        background-color: rgb(20, 20, 20);
-        height: 256px;
-        width: 100%;
-      }
-      /* 
-        sets the colour of the content headings to rgba(255, 254, 227, 0.87),
-        sets the font size of the heading to 40px, makes the background colour #181818,
-        adds 10 pixels of margin, adds 5 pixels vertically and 30 pixels horizontally of padding
-        and smooths out the corners of the container surrounding the heading with a border
-        radius of 2 pixels.
-      */
-      .content-heading {
-        color: rgba(253, 251, 185, 0.94);
-        font-size: 40px;
-        background-color: rgb(23, 23, 23);
-        margin: 10px;
-        padding: 5px 30px;
-        border-radius: 2px;
+        background-color: rgb(41, 33, 20);
+        color: white;
       }
     </style>
   </head>
@@ -71,7 +36,7 @@
     <header>
       <nav>
         <a href="index.html">Home</a>
-        <a href="info.html">Info</a>
+        <a href="process.html">Process</a>
         <a href="gallery.html">Gallery</a>
       </nav>
       <h2 id="nav-bar-title">LOTTIE MARIE</h2>
@@ -121,7 +86,8 @@
             width="256px"
             style="padding-left: 40px"
           />
-          <p>
+          <!-- moves the paragraph a little to the right to look a little more clean -->
+          <p style="margin-left: 10px">
             This is Lottie's most recent illustration. It was <br />
             created to serve as a visual representation <br />
             of a scene in a story entirly made by Lottie.
@@ -129,5 +95,8 @@
         </div>
       </section>
     </main>
+    <footer>
+      <p id="footer-title">Site last updated on 05/02/2022</p>
+    </footer>
   </body>
 </html>

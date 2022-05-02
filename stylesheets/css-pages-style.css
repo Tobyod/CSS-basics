@@ -13,18 +13,29 @@ body {
 }
 /* 
   changes the colour of main heading to rgba(255, 255, 255, 0.87),
+  makes the background-colour rgba(50, 50, 50, 0.6), makes it so the 
+  heading will be able to be on top of the image by setting the position 
+  to absolute, adds 6 pixels of margin and 5 pixels of padding to the 
+  heading and changes the font size of the heading to 100 pixels.
 */
 h1 {
   color: rgba(255, 255, 255, 0.87);
+  background-color: rgba(50, 50, 50, 0.6);
+  margin: 6px;
+  padding: 5px;
+  position: absolute;
+  font-size: 100px;
 }
 /* 
-  Makes the text colour rgba(255, 255, 255, 0.6), font size 24 pixels and 
-  adds 20 pixels of padding for all paragraph tags.
+  Makes the text colour rgba(255, 255, 255, 0.6), font size 24 pixels,
+  adds 20 pixels of padding for all paragraph tags and makes 
+  the line-height for paragraphs 140%
 */
 p {
   color: rgba(255, 255, 255, 0.93);
-  font-size: 24px;
+  font-size: 22px;
   padding: 20px;
+  line-height: 140%;
 }
 /* 
   Fixes the nav bar's position so it stays at the very top of the webpage,
@@ -35,6 +46,14 @@ p {
 header {
   background-color: rgb(27, 27, 27);
   position: fixed;
+  box-shadow: 0px 10px #0000009b;
+  width: 100%;
+  z-index: 1;
+}
+footer {
+  background-color: rgb(27, 27, 27);
+  box-shadow: 5px 10px #0000009b;
+  margin-top: 10px;
   width: 100%;
   z-index: 1;
 }
@@ -69,8 +88,39 @@ nav a:hover {
 */
 #nav-bar-title {
   float: right;
-  display: inline;
   color: rgba(255, 255, 255, 0.96);
   padding: 15px;
   font-size: 30px;
+}
+#footer-title {
+  color: rgba(255, 255, 255, 0.96);
+  padding: 23px;
+  font-size: 17px;
+}
+/* 
+  creates a flexbox allowing an image to be put directly next to text in the 
+  about me section, sets background colour to rgb(29, 29, 29), height to 280 
+  pixels and makes the width the same as the total width of the webpage.
+*/
+.content-block {
+  display: flex;
+  overflow: hidden;
+  background-color: rgb(20, 20, 20);
+  height: auto;
+  width: 100%;
+}
+/* 
+  sets the colour of the content headings to rgba(255, 254, 227, 0.87),
+  sets the font size of the heading to 40px, makes the background colour #181818,
+  adds 10 pixels of margin, adds 5 pixels vertically and 30 pixels horizontally of padding
+  and smooths out the corners of the container surrounding the heading with a border
+  radius of 2 pixels.
+*/
+.content-heading {
+  color: rgba(253, 251, 185, 0.94);
+  font-size: 40px;
+  background-color: rgb(23, 23, 23);
+  margin: 10px;
+  padding: 5px 30px;
+  border-radius: 2px;
 }
