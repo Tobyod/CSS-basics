@@ -28,14 +28,14 @@ h1 {
   font-size: 100px;
 }
 /* 
-  Makes the text colour rgba(255, 255, 255, 0.6), font size 24 pixels,
+  Makes the text colour rgba(255, 255, 255, 0.6), font size 22 pixels,
   adds 20 pixels of padding for all paragraph tags and makes 
   the line-height for paragraphs 140%
 */
 p {
   color: rgba(255, 255, 255, 0.93);
-  font-size: 22px;
   padding: 20px;
+  font-size: 22px;
   line-height: 140%;
 }
 /* 
@@ -53,10 +53,8 @@ header {
 }
 footer {
   background-color: rgb(27, 27, 27);
-  box-shadow: 5px 10px #0000009b;
   margin-top: 10px;
   width: 100%;
-  z-index: 1;
 }
 /* 
   Makes the nav buttons float to the left of the header, removes the underline
@@ -113,14 +111,15 @@ nav a:hover {
 }
 /* 
   sets the colour of the content headings to rgba(255, 254, 227, 0.87),
-  sets the font size of the heading to 40px, makes the background colour #181818,
+  sets the font size of the heading to 44px, makes the background colour #181818,
   adds 10 pixels of margin, adds 5 pixels vertically and 30 pixels horizontally of padding
   and smooths out the corners of the container surrounding the heading with a border
   radius of 2 pixels.
 */
 .content-heading {
   color: rgba(253, 251, 185, 0.94);
-  font-size: 40px;
+  font-style: italic;
+  font-size: 44px;
   background-color: rgb(23, 23, 23);
   margin: 10px;
   padding: 5px 30px;
