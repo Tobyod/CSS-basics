@@ -1,3 +1,11 @@
+/*
+  I chose a yellow colour family to represent my client's website since the
+  purpose of the website was to function as an art portfolio. Because Yellow
+  psychologically represents confidence and creativity, I believe this colour 
+  family does a fantastic job in helping paint the illustrations in as best of 
+  a light as possible to any potential buyer of their art commisions
+*/
+
 /* 
   Sets margin for entire website to 0 so header fits snugly at the top 
 */
@@ -5,22 +13,22 @@
   margin: 0;
 }
 /* 
-  Sets the font family and background colour to #121212 for the whole webpage 
+  Sets the font family and changes the background colour to #121212 for the whole webpage 
 */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #121212;
 }
 /* 
-  changes the colour of main heading to rgba(255, 255, 255, 0.87),
-  makes the background-colour rgba(50, 50, 50, 0.6), makes it so the 
+  changes the colour of main heading to rgb(253, 255, 241),
+  makes the background-colour rgba(25, 25, 25, 0.7), makes it so the 
   heading will be able to be on top of the image by setting the position 
   to absolute, adds 6 pixels of margin and 5 pixels of padding to the 
   heading and changes the font size of the heading to 100 pixels.
 */
 h1 {
-  color: rgba(255, 251, 231, 0.87);
-  background-color: rgba(50, 50, 50, 0.7);
+  color: rgb(253, 255, 241);
+  background-color: rgba(25, 25, 25, 0.7);
   margin: 6px;
   padding: 5px;
   text-transform: uppercase;
@@ -28,9 +36,10 @@ h1 {
   font-size: 100px;
 }
 /* 
-  Makes the text colour rgba(255, 255, 255, 0.6), font size 22 pixels,
+  Makes the text colour rgba(255, 255, 255, 0.93), font size 22 pixels,
   adds 20 pixels of padding for all paragraph tags and makes 
-  the line-height for paragraphs 140%
+  the line-height for paragraphs 140% because paragraphs appear to be the
+  only text using multiple lines
 */
 p {
   color: rgba(255, 255, 255, 0.93);
@@ -40,9 +49,10 @@ p {
 }
 /* 
   Fixes the nav bar's position so it stays at the very top of the webpage,
-  makes the width 100% the width of the webpage, adjusts the z-index so the
-  header goes over the webpage's other content and makes the header's background
-  colour #1c1c1c.
+  makes the width 100% the width of the webpage, adjusts the z-index to 1 so the
+  header goes over the webpage's other content, makes the header's background
+  colour rgb(27, 27, 27) and adds a box shadow thats 0 pixels to the right, ten pixels down
+  and has the colour #0000009b.
 */
 header {
   background-color: rgb(27, 27, 27);
@@ -51,6 +61,10 @@ header {
   width: 100%;
   z-index: 1;
 }
+/* 
+  makes the footer's background colour rgb(27, 27, 27), makes the width 100% the width of the webpage
+  and adds 10 pixels of margin to the top.
+*/
 footer {
   background-color: rgb(27, 27, 27);
   margin-top: 10px;
@@ -58,73 +72,93 @@ footer {
 }
 /* 
   Makes the nav buttons float to the left of the header, removes the underline
-  nav buttons have to make it look more clean, makes text colour rgba(255, 255, 255, 0.87),
-  alligns the button's text to the center of the button, adds 23 pixels of padding and 
+  nav buttons have to make it look more clean, makes text colour rgb(255, 250, 200),
+  aligns the button's text to the center of the button, adds 23 pixels of padding and 
   makes the font size 17 pixels.
 */
 nav a {
   float: left;
   text-decoration: none;
-  color: rgba(255, 254, 220, 0.96);
+  color: rgb(255, 250, 200);
   text-align: center;
   padding: 23px;
   font-size: 17px;
 }
 /* 
-  gradually lightens nav button's background colour to color: rgba(255, 255, 255, 0.87)
-  and darkens the button's text over 0.5 seconds when a nav button is hovered over 
+  gradually lightens nav button's background colour to rgba(255, 250, 200)
+  and darkens the button's text colour to #181818 over 0.5 seconds when a 
+  nav button is hovered over 
 */
 nav a:hover,
 a:focus {
   transition: 0.5s ease;
-  background-color: rgba(255, 254, 220, 0.96);
+  background-color: rgb(255, 250, 200);
   color: #181818;
+}
+/* 
+  changes the background colour of highlighted words to #f4f1ff, changes the
+  text color to rgb(20, 20, 20), adds 1 pixels of padding horizontally, adds
+  2 pixels of margin horizontally (this is to give the highlighted text more space
+  so it doesn't looked as cramped) and smooths out the corners of the container surrounding 
+  the highlighted word with a border radius of 3 pixels.
+*/
+.highlighted-word {
+  background-color: #f4f1ff;
+  color: rgb(20, 20, 20);
+  padding: 0px 1px;
+  margin: 0px 3px;
+  border-radius: 3px;
 }
 /* 
   displays title of the webpage as an inline element to make 
   it able appear on the same line as nav buttons, floats title to the right
-  of the header, changes its text colour to color: rgba(255, 255, 255, 0.87), 
-  adds 15 pixels of padding and adjusts font size to 30 pixels
+  of the header, changes its text colour to color: rgb(255, 250, 200), 
+  adds 15 pixels of padding, transforms the text to uppercase characters and adjusts
+   font size to 30 pixels
 */
 #nav-bar-title {
   float: right;
-  color: rgba(255, 254, 220, 0.96);
+  display: inline;
+  color: rgb(255, 250, 200);
   text-transform: uppercase;
   padding: 15px;
   font-size: 30px;
 }
+/* 
+  changes its text colour to rgb(255, 250, 200), 
+  adds 23 pixels of padding, tranforms the text to uppercase characters 
+  and adjusts font size to 17 pixels
+*/
 #footer-title {
-  color: rgba(255, 254, 220, 0.96);
+  color: rgb(255, 250, 200);
   padding: 23px;
+  text-transform: uppercase;
   font-size: 17px;
 }
 /* 
-  creates a flexbox allowing an image to be put directly next to text in the 
-  about me section, sets background colour to rgb(29, 29, 29), height to 280 
-  pixels and makes the width the same as the total width of the webpage.
+  creates a flexbox allowing an image to be put directly next to text when in the same block of content,
+  changes the background colour of the block of content to rgb(20, 20, 20);
+  and makes the height and width their automatic default value.
 */
 .content-block {
   display: flex;
-  overflow: hidden;
   background-color: rgb(20, 20, 20);
   height: auto;
-  width: 100%;
-  padding-right: 0;
-  margin-right: 0;
+  width: auto;
 }
 /* 
-  sets the colour of the content headings to rgba(255, 254, 227, 0.87),
-  sets the font size of the heading to 44px, makes the background colour #181818,
+  sets the font colour of the content headings to rgb(255, 250, 200), sets the font style to 
+  italic sets the font size of the heading to 44px, makes the background colour rgb(24, 24, 24),
   adds 10 pixels of margin, adds 5 pixels vertically and 30 pixels horizontally of padding
   and smooths out the corners of the container surrounding the heading with a border
-  radius of 2 pixels.
+  radius of 3 pixels.
 */
 .content-heading {
-  color: rgba(255, 254, 220, 0.94);
+  color: rgb(255, 250, 200);
   font-style: italic;
   font-size: 44px;
-  background-color: rgb(23, 23, 23);
+  background-color: rgb(24, 24, 24);
   margin: 10px;
   padding: 5px 30px;
-  border-radius: 2px;
+  border-radius: 3px;
 }
