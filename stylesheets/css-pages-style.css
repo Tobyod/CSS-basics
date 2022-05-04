@@ -103,7 +103,7 @@ a:focus {
   the highlighted word with a border radius of 3 pixels.
 */
 .highlighted-word {
-  background-color: #f4f1ff;
+  background-color: rgb(240, 235, 255);
   color: rgb(20, 20, 20);
   padding: 0px 1px;
   margin: 0px 3px;
