@@ -24,6 +24,19 @@
       h1 {
         top: 190px;
         left: 40%;
+        -moz-animation: swivel 1s ease-in-out 0.5s forwards;
+        -webkit-animation: swivel 1s ease-in-out 0.5s forwards;
+        -o-animation: swivel 1s ease-in-out 0.5s forwards;
+        animation: swivel 1s ease-in-out 0.5s forwards;
+      }
+
+      @keyframes swivel {
+        from {
+          transfrom: translateX(-50%) rotateY(90deg);
+        }
+        to {
+          transfrom: translateX(-50%) rotateY(0deg);
+        }
       }
     </style>
   </head>
@@ -91,7 +104,7 @@
       </section>
     </main>
     <footer>
-      <p id="footer-title">Site last updated on 05/03/2022</p>
+      <p id="footer-title">Site last updated on 05/30/2022</p>
     </footer>
   </body>
 </html>
