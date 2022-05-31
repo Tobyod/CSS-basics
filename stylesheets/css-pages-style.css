@@ -28,7 +28,7 @@ body {
 */
 h1 {
   color: rgb(253, 255, 241);
-  background-color: rgba(25, 25, 25, 0.7);
+  background-color: rgba(22, 25, 25, 0.7);
   margin: 6px;
   padding: 5px;
   text-transform: uppercase;
@@ -91,6 +91,9 @@ nav a {
 */
 nav a:hover,
 a:focus {
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
   background-color: rgb(255, 250, 200);
   color: #181818;
@@ -99,15 +102,13 @@ a:focus {
   changes the background colour of highlighted words to #f4f1ff, changes the
   text color to rgb(20, 20, 20), adds 1 pixels of padding horizontally, adds
   2 pixels of margin horizontally (this is to give the highlighted text more space
-  so it doesn't looked as cramped) and smooths out the corners of the container surrounding 
-  the highlighted word with a border radius of 3 pixels.
+  so it doesn't looked as cramped)
 */
 .highlighted-word {
   background-color: rgb(240, 235, 255);
   color: rgb(20, 20, 20);
   padding: 0px 1px;
   margin: 0px 3px;
-  border-radius: 3px;
 }
 /* 
   displays title of the webpage as an inline element to make 
@@ -131,6 +132,7 @@ a:focus {
 */
 #footer-title {
   color: rgb(255, 250, 200);
+  padding-left: 10%;
   padding: 23px;
   text-transform: uppercase;
   font-size: 17px;
@@ -142,7 +144,7 @@ a:focus {
 */
 .content-block {
   display: flex;
-  background-color: rgb(20, 20, 20);
+  background-color: #131313;
   height: auto;
   width: auto;
 }
@@ -150,15 +152,12 @@ a:focus {
   sets the font colour of the content headings to rgb(255, 250, 200), sets the font style to 
   italic sets the font size of the heading to 44px, makes the background colour rgb(24, 24, 24),
   adds 10 pixels of margin, adds 5 pixels vertically and 30 pixels horizontally of padding
-  and smooths out the corners of the container surrounding the heading with a border
-  radius of 3 pixels.
 */
 .content-heading {
   color: rgb(255, 250, 200);
   font-style: italic;
   font-size: 44px;
   background-color: rgb(24, 24, 24);
-  margin: 10px;
+  margin: 10px 0px;
   padding: 5px 30px;
-  border-radius: 3px;
 }
