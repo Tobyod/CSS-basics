@@ -57,6 +57,8 @@ p {
 header {
   background-color: rgb(27, 27, 27);
   position: fixed;
+  -moz-box-shadow: 0px 10px #0000009b;
+  -webkit-box-shadow: 0px 10px #0000009b;
   box-shadow: 0px 10px #0000009b;
   width: 100%;
   z-index: 1;
@@ -78,6 +80,8 @@ footer {
 */
 nav a {
   float: left;
+  -webkit-text-decoration: none;
+  -moz-text-decoration: none;
   text-decoration: none;
   color: rgb(255, 250, 200);
   text-align: center;
@@ -140,7 +144,7 @@ a:focus {
 /* 
   creates a flexbox allowing an image to be put directly next to text when in the same block of content,
   changes the background colour of the block of content to rgb(20, 20, 20);
-  and makes the height and width their automatic default value.
+  and makes the height and width their automatic default value.         
 */
 .content-block {
   display: flex;
