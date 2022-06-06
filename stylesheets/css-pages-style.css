@@ -18,8 +18,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #121212;
-
-  animation: grayscale-filter 3s forwards;
 }
 
 @keyframes grayscale-filter {
@@ -32,16 +30,18 @@ body {
   makes the background-colour rgba(25, 25, 25, 0.7), makes it so the 
   heading will be able to be on top of the image by setting the position 
   to absolute, adds 6 pixels of margin and 5 pixels of padding to the 
-  heading and changes the font size of the heading to 100 pixels.
+  heading, moves the heading 10% away from the left and changes the font size 
+  of the heading to 100 pixels.
 */
 h1 {
   color: rgb(253, 255, 241);
   background-color: rgba(22, 25, 25, 0.7);
+  left: 10%;
   margin: 6px;
   padding: 5px;
   text-transform: uppercase;
   position: absolute;
-  font-size: 100px;
+  font-size: 10vw;
 }
 /* 
   Makes the text colour rgba(255, 255, 255, 0.93), font size 22 pixels,
@@ -52,8 +52,9 @@ h1 {
 p {
   color: rgba(255, 255, 255, 0.93);
   padding: 20px;
-  font-size: 22px;
+  font-size: 16px;
   line-height: 140%;
+  white-space: wrap;
 }
 /* 
   Fixes the nav bar's position so it stays at the very top of the webpage,
@@ -94,8 +95,8 @@ nav a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.95);
   text-align: center;
-  padding: 23px;
-  font-size: 17px;
+  padding: 1.77vw;
+  font-size: 1.5vw;
 }
 /* 
   gradually lightens nav button's background colour to rgba(255, 250, 200)
@@ -120,7 +121,7 @@ a:focus {
 .highlighted-word {
   background-color: rgb(240, 235, 255);
   color: rgb(20, 20, 20);
-  padding: 0px 1px;
+  padding: 0px 5px;
   margin: 0px 3px;
 }
 /* 
@@ -135,9 +136,9 @@ a:focus {
   display: inline;
   color: rgba(255, 255, 255, 0.95);
   text-transform: uppercase;
-  padding: 15px;
+  padding: 1.5vw;
   padding-right: 10%;
-  font-size: 30px;
+  font-size: 2vw;
 }
 /* 
   changes its text colour to rgb(255, 250, 200), 
@@ -163,6 +164,8 @@ a:focus {
   margin-right: 10%;
   height: auto;
   width: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 /* 
   sets the font colour of the content headings to rgb(255, 250, 200), sets the font style to 
@@ -172,8 +175,8 @@ a:focus {
 .content-heading {
   color: rgb(255, 250, 200);
   font-style: italic;
-  font-size: 44px;
+  font-size: 30px;
   background-color: rgb(24, 24, 24);
-  margin: 10px 5%;
+  margin: 15px 5%;
   padding: 5px 30px;
 }
