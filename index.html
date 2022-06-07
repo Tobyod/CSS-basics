@@ -3,7 +3,7 @@
   Course: Software Development 20S
   Teacher: Mr. Hardman
   School: Pembina Trails Early College
-  Date Last Modified: 5/3/2022
+  Date Last Modified: 6/7/2022
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -19,9 +19,8 @@
     />
     <style>
       /*
-         Moves the heading down 190 pixels, 40% away from the left
-        */
-
+         Moves the heading down 20% the viewport width
+      */
       h1 {
         top: 20vw;
       }
@@ -51,22 +50,20 @@
         <div class="content-block">
           <!-- The artist requested they remain anonymous, so one of their favourite 
           original character's name and face is being used to represent them  -->
-          <p style="margin-left: 6%; max-width: 40%">
-            Hello, my name is
-            <span class="highlighted-word">Lottie Marie.</span> I'm a very
-            talented and passionate artist who has been drawing for as long as I
-            can remember. This website is dedicated to showing off my best works
-            of art, and telling you a bit about me.
-
-            <!-- adds 60 pixels of padding from the left of webpage to the image -->
-            <img
-              src="https://media.discordapp.net/attachments/731314689367212046/968912002720366653/unknown.png"
-              alt="A headshot illustration of the fictional character named Lottie Marie with her pet crab resting on her head."
-              width="256px"
-              height="256px"
-              style="padding-left: 60px"
-            />
+          <p class="flex-text">
+            Hello, my name is Lottie Marie. I'm a very talented and passionate
+            artist who has been drawing for as long as I can remember. This
+            website is dedicated to showing off my best works of art, and
+            telling you a bit about me.
           </p>
+
+          <!-- adds 60 pixels of padding from the left of webpage to the image -->
+          <img
+            src="https://media.discordapp.net/attachments/731314689367212046/968912002720366653/unknown.png"
+            alt="A headshot illustration of the fictional character named Lottie Marie with her pet crab resting on her head."
+            width="256px"
+            height="256px"
+          />
         </div>
       </section>
       <section>
@@ -78,19 +75,19 @@
             alt="An illustration of an unkempt room covered in vines with a balcony that gives a clear view of a night sky with three moons."
             height="256px"
             width="256px"
-            style="padding-left: 6%"
+            style="padding-right: 60px"
           />
           <!-- moves the paragraph a little to the right by adding 10 pixels of margin away fomr the left to look a little more clean -->
-          <p style="margin-right: 6%">
-            This is Lottie's most recent illustration. It was <br />
-            created to serve as a visual representation <br />
-            of a scene in a story entirly made by Lottie.
+          <p class="flex-text">
+            This is Lottie's most recent illustration. It was created to serve
+            as a visual representation of a scene in a story entirly made by
+            Lottie.
           </p>
         </div>
       </section>
     </main>
     <footer>
-      <p id="footer-title">Site last updated on 05/30/2022</p>
+      <p id="footer-title">Site last updated on 06/07/2022</p>
     </footer>
   </body>
 </html>
